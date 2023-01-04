@@ -13,6 +13,7 @@ public class Ejemplo08 {
 
     public static void main(String[] args) {
         // 
+        
         String mensajeSuma;
         String mensajeSumaDos;
         mensajeSuma = obtenerTablaSumar(10, 9); // se invoca al método 

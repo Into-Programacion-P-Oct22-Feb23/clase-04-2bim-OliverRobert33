@@ -15,26 +15,26 @@ public class Ejemplo01 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        
-        
+
         String miCiudad = obtenerCiudadMayuscula("Loja");
-        System.out.printf("%s\n", miCiudad);
+        int o = obtenerMultiplicacion(100, 6); //lo hize por ejercicio
+        String nombre = obtenerNombre();
+        System.out.printf("%s\n%d\n%s\n%s\n", miCiudad, o, obtenerNombre()
+                , nombre);
     }
-    
-    
-    public String obtenerCiudadMayuscula(String m){
+
+    public static String obtenerCiudadMayuscula(String m) {
         String m2 = m.toUpperCase();
         return m2;
     }
-    
-    public static void obtenerMultiplicacion(int tabla, int limite){
-        
+
+    public static int obtenerMultiplicacion(int tabla, int limite) {
+        int el = tabla*limite;
+        return el;
     }
-    
-    public static String obtenerNombre(){
+
+    public static String obtenerNombre() {
         return "Luis";
     }
-    
-    
+
 }
